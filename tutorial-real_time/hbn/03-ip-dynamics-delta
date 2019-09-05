@@ -1,34 +1,48 @@
 #                                                           
+#  **    **    **     ****     ****  ******     *******     
+# //**  **    ****   /**/**   **/** /*////**   **/////**    
+#  //****    **//**  /**//** ** /** /*   /**  **     //**   
+#   //**    **  //** /** //***  /** /******  /**      /**   
+#    /**   **********/**  //*   /** /*//// **/**      /**   
+#    /**  /**//////**/**   /    /** /*    /**//**     **    
+#    /**  /**     /**/**        /** /*******  //*******     
+#    //   //      // //         //  ///////    ///////      
 #                                                           
-# Y88b    /   e           e    e      888~~\    ,88~-_      
-#  Y88b  /   d8b         d8b  d8b     888   |  d888   \     
-#   Y88b/   /Y88b       d888bdY88b    888 _/  88888    |    
-#    Y8Y   /  Y88b     / Y88Y Y888b   888  \  88888    |    
-#     Y   /____Y88b   /   YY   Y888b  888   |  Y888   /     
-#    /   /      Y88b /          Y888b 888__/    `88_-~      
-#                                                           
-#                                                           
-#      Version 4.4.0 Revision 16916 Hash 1b9e3c306          
-#                       MPI Build                           
-#               http://www.yambo-code.org                   
+#       Version 4.4.0 Revision 16916 Hash 1b9e3c306         
+#                        MPI Build                          
+#                http://www.yambo-code.org                  
 #
-optics                         # [R OPT] Optics
-chi                            # [R CHI] Dyson equation for Chi.
-FFTGvecs=  200         RL      # [FFT] Plane-waves
-Chimod= "IP"                   # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
-% QpntsRXd
-   1 |   1 |                   # [Xd] Transferred momenta
+negf                           # [R] Real-Time dynamics
+OccTresh=0.1000E-4             # Occupation treshold (metallic bands)
+DBsIOoff= ""                   # [IO] Space-separated list of DB with NO I/O. DB=(DIP,X,HF,COLLs,J,GF,CARRIERs,OBS,W,SC,BS,ALL)
+HXC_Potential= "IP"            # [SC] SC HXC Potential
+FFTGvecs= 201          RL      # [FFT] Plane-waves
+% RTBands
+   4 |   5 |                   # [RT] Bands
 %
-% BndsRnXd
-   4 |   5 |                   # [Xd] Polarization function bands
+Integrator= "RK2 RWA"              # [RT] Integrator. Use keywords space separated  ( "EULER/EXPn/INV" "SIMPLE/RK2/RK4/HEUN" "RWA")
+RTstep=10.000000       as      # [RT] Real Time step length
+NETime= 0.040000       ps      # [RT] Simulation Time
+% IOtime
+ 0.05    | 1.00     | 0.10     |  fs    # [RT] Time between to consecutive I/O (OBSERVABLEs,CARRIERs - GF - OUTPUT)
 %
-% EnRngeXd
-  0.00000 | 10.00000 | eV      # [Xd] Energy range
+% Field1_Freq
+ 0.0000     | 0.00     | eV      # [RT Field1] Frequency
 %
-% DmRngeXd
-  0.10000 |  0.10000 | eV      # [Xd] Damping range
+Field1_Int= 1.0E16   kWLm2   # [RT Field1] Intensity
+Field1_Width=  0.000000 fs      # [RT Field1] Width
+Field1_kind= "DELTA"             # [RT Field1] Kind(SIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
+Field1_pol= "linear"             # [RT Field1] Pol(linear|circular)
+% Field1_Dir
+ 1.000000 | 0.000000 | 0.000000 |        # [RT Field1] Versor
 %
-ETStpsXd= 1000                 # [Xd] Total Energy steps
-% LongDrXd
- 1.000000 | 0.000000 | 0.000000 |        # [Xd] [cc] Electric Field
+% Field1_Dir_circ
+ 0.000000 | 1.000000 | 0.000000 |        # [RT Field1] Versor_circ
+%
+Field1_Tstart= 0.000000fs      # [RT Field1] Initial Time
+% GfnQP_Wv
+ 0.050     | 0.00     | 0.00     |        # [EXTQP G] W parameters  (valence) eV| 1|eV^-1
+%
+% GfnQP_Wc
+ 0.050     | 0.00     | 0.00     |        # [EXTQP G] W parameters  (conduction) eV| 1 |eV^-1
 %
