@@ -29,8 +29,8 @@ NETime= 1.000000       ps      # [RT] Simulation Time
 % Field1_Freq
  4.1856     | 0.00     | eV      # [RT Field1] Frequency
 %
-Field1_Int= 1.0E3   kWLm2   # [RT Field1] Intensity
-Field1_Width= 50.000000 fs      # [RT Field1] Width
+Field1_Int= 1.0E8   kWLm2   # [RT Field1] Intensity
+Field1_Width=  2.000000 fs      # [RT Field1] Width
 Field1_kind= "GAUSS"             # [RT Field1] Kind(SIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
 Field1_pol= "linear"             # [RT Field1] Pol(linear|circular)
 % Field1_Dir
