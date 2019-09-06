@@ -1,7 +1,7 @@
 from numpy import loadtxt
 from pylab import *
 
-ref = loadtxt('references/o-ip-ref.eps_q1_ip')
+ref = loadtxt('refs/o-ip-ref.eps_q1_ip')
 
 xlabel('E (eV)')
 ylabel('$\chi$')
