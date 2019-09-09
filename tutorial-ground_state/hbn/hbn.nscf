@@ -1,5 +1,5 @@
 &control
-         calculation = 'scf'
+         calculation = 'nscf'
               prefix = 'hBN'
           pseudo_dir = '../../pseudos'
            verbosity = 'high'
@@ -9,12 +9,15 @@
            celldm(1) = 4.7
            celldm(3) = 2.55319148936
              ecutwfc = 20
+    force_symmorphic = .true.
                ibrav = 4
                  nat = 2
+                nbnd = 10 
                 ntyp = 2
 /&end
 &electrons
             conv_thr = 1e-08
+      diago_full_acc = .true.
 /&end
 
 

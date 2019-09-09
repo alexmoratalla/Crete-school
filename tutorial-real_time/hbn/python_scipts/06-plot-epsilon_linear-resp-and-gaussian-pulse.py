@@ -8,7 +8,7 @@ chi3= loadtxt('refs/o-gauss-int1e11-2fs.YPP-eps_along_E')
 
 
 xlabel('E (eV)')
-ylabel('$\chi$')
+ylabel('$\epsilon$')
 plot(ref[:,0],ref[:,1],'o',label='$\chi$(reference)')
 plot(chi1[:,0],chi1[:,1],'-',label='$10^{8}$')
 plot(chi2[:,0],chi2[:,1],'-',label='$10^{10}$')

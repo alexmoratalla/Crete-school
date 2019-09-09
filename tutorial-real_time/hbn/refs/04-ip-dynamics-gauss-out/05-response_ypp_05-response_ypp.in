@@ -1,0 +1,27 @@
+#                                                           
+#  **    **    **     ****     ****  ******     *******     
+# //**  **    ****   /**/**   **/** /*////**   **/////**    
+#  //****    **//**  /**//** ** /** /*   /**  **     //**   
+#   //**    **  //** /** //***  /** /******  /**      /**   
+#    /**   **********/**  //*   /** /*//// **/**      /**   
+#    /**  /**//////**/**   /    /** /*    /**//**     **    
+#    /**  /**     /**/**        /** /*******  //*******     
+#    //   //      // //         //  ///////    ///////      
+#                                                           
+#       Version 4.4.0 Revision 16916 Hash 1b9e3c306         
+#                        MPI Build                          
+#                http://www.yambo-code.org                  
+#
+RealTime                       # [R] Real-Time Post-Processing
+RT_X                           # [R] Response functions Post-Processing
+Xorder= 1                      # Max order of the response/exc functions
+% EnRngeRt
+  0.00000 | 10.00000 | eV      # Energy range
+%
+ETStpsRt= 1000                 # Total Energy steps
+% TimeRange
+-1.000000 |-1.000000 | fs      # Time-window where processing is done
+%
+DampMode= "NONE"               # Damping type ( NONE | LORENTZIAN | GAUSSIAN )
+DampFactor= 0.000000   eV      # Damping parameter
+#SkipOBS_IO                    # Do not dump on file the RT observables (P(t),J(t),D(t)...)
