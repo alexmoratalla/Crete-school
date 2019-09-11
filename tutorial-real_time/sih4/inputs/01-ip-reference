@@ -1,0 +1,34 @@
+#                                                           
+#                                                           
+# Y88b    /   e           e    e      888~~\    ,88~-_      
+#  Y88b  /   d8b         d8b  d8b     888   |  d888   \     
+#   Y88b/   /Y88b       d888bdY88b    888 _/  88888    |    
+#    Y8Y   /  Y88b     / Y88Y Y888b   888  \  88888    |    
+#     Y   /____Y88b   /   YY   Y888b  888   |  Y888   /     
+#    /   /      Y88b /          Y888b 888__/    `88_-~      
+#                                                           
+#                                                           
+#      Version 4.4.0 Revision 16916 Hash 1b9e3c306          
+#                       MPI Build                           
+#               http://www.yambo-code.org                   
+#
+optics                         # [R OPT] Optics
+chi                            # [R CHI] Dyson equation for Chi.
+FFTGvecs=  500         RL      # [FFT] Plane-waves
+Chimod= "IP"                   # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+% QpntsRXd
+   1 |   1 |                   # [Xd] Transferred momenta
+%
+% BndsRnXd
+   2 |   8 |                   # [Xd] Polarization function bands
+%
+% EnRngeXd
+  4.00000 | 12.00000 | eV      # [Xd] Energy range
+%
+% DmRngeXd
+  0.10000 |  0.10000 | eV      # [Xd] Damping range
+%
+ETStpsXd= 1000                 # [Xd] Total Energy steps
+% LongDrXd
+ 1.000000 | 0.000000 | 0.000000 |        # [Xd] [cc] Electric Field
+%
