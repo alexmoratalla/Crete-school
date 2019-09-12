@@ -1,0 +1,52 @@
+#                                                           
+#  **    **    **     ****     ****  ******     *******     
+# //**  **    ****   /**/**   **/** /*////**   **/////**    
+#  //****    **//**  /**//** ** /** /*   /**  **     //**   
+#   //**    **  //** /** //***  /** /******  /**      /**   
+#    /**   **********/**  //*   /** /*//// **/**      /**   
+#    /**  /**//////**/**   /    /** /*    /**//**     **    
+#    /**  /**     /**/**        /** /*******  //*******     
+#    //   //      // //         //  ///////    ///////      
+#                                                           
+#       Version 4.4.0 Revision 16916 Hash 1b9e3c306         
+#                        MPI Build                          
+#                http://www.yambo-code.org                  
+#
+negf                           # [R] Real-Time dynamics
+FFTGvecs= 500          RL      # [FFT] Plane-waves
+HXC_Potential= "IP"            # [SC] SC HXC Potential
+% RTBands
+   2 |   8 |                   # [RT] Bands
+%
+
+Integrator= "RK2 RWA"          # [RT] Integrator. Use keywords space separated  ( "EULER/EXPn/INV" "SIMPLE/RK2/RK4/HEUN" "RWA")
+RTstep= 10.000000      as      # [RT] Real Time step length
+NETime= 0.200000       ps      # [RT] Simulation Time
+#PhLifeTime=41.35668 fs
+% GfnQP_Wv
+ 0.050     | 0.00     | 0.00     |        # [EXTQP G] W parameters  (valence) eV| 1|eV^-1
+%
+% GfnQP_Wc
+ 0.050     | 0.00     | 0.00     |        # [EXTQP G] W parameters  (conduction) eV| 1 |eV^-1
+%
+
+% Field1_Freq
+ 7.877     | 0.00     | eV      # [RT Field1] Frequency
+%
+Field1_Int= 1.0E4   kWLm2   # [RT Field1] Intensity
+Field1_Width= 30.000000 fs      # [RT Field1] Width
+Field1_kind= "PULSE"             # [RT Field1] Kind(SIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
+Field1_pol= "linear"             # [RT Field1] Pol(linear|circular)
+% Field1_Dir
+ 1.000000 | 0.000000 | 0.000000 |        # [RT Field1] Versor
+%
+% Field1_Dir_circ
+ 0.000000 | 1.000000 | 0.000000 |        # [RT Field1] Versor_circ
+%
+Field1_Tstart=000.00000 fs      # [RT Field1] Initial Time
+% IOtime
+ 0.05    | 1.00     | 0.10     |  fs    # [RT] Time between to consecutive I/O (OBSERVABLEs,CARRIERs - GF - OUTPUT)
+%
+#OccTresh=0.1000E-4             # Occupation treshold (metallic bands)
+#DBsIOoff= ""                   # [IO] Space-separated list of DB with NO I/O. DB=(DIP,X,HF,COLLs,J,GF,CARRIERs,OBS,W,SC,BS,ALL)
+SaveGhistory                  # [RT] Save the history of the green function

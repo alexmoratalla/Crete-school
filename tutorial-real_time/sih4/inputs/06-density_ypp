@@ -1,0 +1,25 @@
+#                                                           
+#  ____  ____     _       ____    ____  ______      ___     
+# |_  _||_  _|   / \     |_   \  /   _||_   _ \   ."   `.   
+#   \ \  / /    / _ \      |   \/   |    | |_) | /  .-.  \  
+#    \ \/ /    / ___ \     | |\  /| |    |  __". | |   | |  
+#    _|  |_  _/ /   \ \_  _| |_\/_| |_  _| |__) |\  `-"  /  
+#   |______||____| |____||_____||_____||_______/  `.___."   
+#                                                           
+#                                                           
+#                                                           
+#       Version 4.4.0 Revision 16919 Hash 5175bb50d         
+#                        MPI Build                          
+#                http://www.yambo-code.org                  
+#
+RealTime                       # [R] Real-Time Post-Processing
+RTdeltaRho                     # [R] Analize the density
+RTtime                         # [R] Post-Processing kind: function of time
+TimeStep= 20.000000     fs      # Time step
+% TimeRange
+-1.000000 |-1.000000 | fs      # Time-window where processing is done
+%
+LoadGhistory                   # [NEGF] Build the NEQ density from the G_lesser
+Format= "x"                    # Output format [(c)ube/(g)nuplot/(x)crysden]
+Direction= "123"                 # [rlu] [1/2/3] for 1d or [12/13/23] for 2d [123] for 3D
+FFTGvecs=     30       Ry      # [FFT] Plane-waves
