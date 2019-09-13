@@ -20,15 +20,15 @@ Chimod= "IP"                   # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
    1 |   1 |                   # [Xd] Transferred momenta
 %
 % BndsRnXd
-   4 |   5 |                   # [Xd] Polarization function bands
+   3 |   5 |                   # [Xd] Polarization function bands
 %
 % EnRngeXd
-  0.00000 | 10.00000 | eV      # [Xd] Energy range
+  5.00000 | 15.00000 | eV      # [Xd] Energy range
 %
 % DmRngeXd
   0.10000 |  0.10000 | eV      # [Xd] Damping range
 %
-ETStpsXd= 1000                 # [Xd] Total Energy steps
+ETStpsXd= 5001                 # [Xd] Total Energy steps
 % LongDrXd
- 1.000000 | 0.000000 | 0.000000 |        # [Xd] [cc] Electric Field
+ 0.000000 | 0.000000 | 1.000000 |        # [Xd] [cc] Electric Field
 %

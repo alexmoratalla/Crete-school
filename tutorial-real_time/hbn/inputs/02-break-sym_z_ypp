@@ -14,10 +14,10 @@
 #
 fixsyms                        # [R] Reduce Symmetries
 % Efield1
- 1.00     | 0.00     | 0.00     |        # First external Electric Field
+ 0.00     | 0.00     | 1.00     |        # First external Electric Field
 %
 % Efield2
- 0.00     | 1.00     | 0.00     |        # Additional external Electric Field
+ 0.00     | 0.00     | 0.00     |        # Additional external Electric Field
 %
 BField= 0.000000       T       # [MAG] Magnetic field modulus
 Bpsi= 0.000000         deg     # [MAG] Magnetic field psi angle [degree]
