@@ -48,3 +48,5 @@ Field1_Tstart= 0.000000fs      # [RT Field1] Initial Time
 % GfnQP_Wc
  0.050     | 0.00     | 0.00     |        # [EXTQP G] W parameters  (conduction) eV| 1 |eV^-1
 %
+
+#Gauge="velocity"
