@@ -1,5 +1,5 @@
 &control
-         calculation = 'nscf'
+         calculation = 'scf'
               prefix = 'si'
           pseudo_dir = '../../pseudos'
            verbosity = 'high'
@@ -8,16 +8,13 @@
 &system
            celldm(1) = 10.3
              ecutwfc = 30
-    force_symmorphic = .true.
                ibrav = 2
                  nat = 2
-                nbnd = 30
                 ntyp = 1
          occupations = 'fixed'
 /&end
 &electrons
             conv_thr = 1e-08
-      diago_full_acc = .true.
 /&end
 
 
@@ -27,4 +24,4 @@ ATOMIC_POSITIONS { crystal }
  Si   0.1250000000   0.1250000000   0.1250000000
  Si  -0.1250000000  -0.1250000000  -0.1250000000
 K_POINTS { automatic }
-  2  2  2  0  0  0
+  4  4  4  1  1  1

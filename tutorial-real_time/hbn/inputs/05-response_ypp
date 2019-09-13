@@ -18,7 +18,7 @@ Xorder= 1                      # Max order of the response/exc functions
 % EnRngeRt
   0.00000 | 10.00000 | eV      # Energy range
 %
-ETStpsRt= 1000                 # Total Energy steps
+ETStpsRt= 5001                 # Total Energy steps
 % TimeRange
 -1.000000 |-1.000000 | fs      # Time-window where processing is done
 %
