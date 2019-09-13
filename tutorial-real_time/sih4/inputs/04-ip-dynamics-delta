@@ -14,6 +14,7 @@
 #
 negf                           # [R] Real-Time dynamics
 HXC_Potential= "IP"            # [SC] SC HXC Potential
+FFTGvecs= 500          RL      # [FFT] Plane-waves
 % RTBands
    2 |   8 |                   # [RT] Bands
 %
@@ -49,4 +50,4 @@ Field1_Tstart= 0.000000fs      # [RT Field1] Initial Time
 %
 OccTresh=0.1000E-4             # Occupation treshold (metallic bands)
 DBsIOoff= ""                   # [IO] Space-separated list of DB with NO I/O. DB=(DIP,X,HF,COLLs,J,GF,CARRIERs,OBS,W,SC,BS,ALL)
-FFTGvecs= 500          RL      # [FFT] Plane-waves
+SaveGhistory                  # [RT] Save the history of the green function

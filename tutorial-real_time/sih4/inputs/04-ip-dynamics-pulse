@@ -21,7 +21,7 @@ HXC_Potential= "IP"            # [SC] SC HXC Potential
 
 Integrator= "RK2 RWA"          # [RT] Integrator. Use keywords space separated  ( "EULER/EXPn/INV" "SIMPLE/RK2/RK4/HEUN" "RWA")
 RTstep= 10.000000      as      # [RT] Real Time step length
-NETime= 0.200000       ps      # [RT] Simulation Time
+NETime= 0.500000       ps      # [RT] Simulation Time
 #PhLifeTime=41.35668 fs
 % GfnQP_Wv
  0.050     | 0.00     | 0.00     |        # [EXTQP G] W parameters  (valence) eV| 1|eV^-1
@@ -33,8 +33,8 @@ NETime= 0.200000       ps      # [RT] Simulation Time
 % Field1_Freq
  7.877     | 0.00     | eV      # [RT Field1] Frequency
 %
-Field1_Int= 1.0E4   kWLm2   # [RT Field1] Intensity
-Field1_Width= 30.000000 fs      # [RT Field1] Width
+Field1_Int= 1.0E2   kWLm2   # [RT Field1] Intensity
+Field1_Width= 20.000000 fs      # [RT Field1] Width
 Field1_kind= "PULSE"             # [RT Field1] Kind(SIN|RES|ANTIRES|GAUSS|DELTA|QSSIN)
 Field1_pol= "linear"             # [RT Field1] Pol(linear|circular)
 % Field1_Dir
@@ -49,4 +49,4 @@ Field1_Tstart=000.00000 fs      # [RT Field1] Initial Time
 %
 #OccTresh=0.1000E-4             # Occupation treshold (metallic bands)
 #DBsIOoff= ""                   # [IO] Space-separated list of DB with NO I/O. DB=(DIP,X,HF,COLLs,J,GF,CARRIERs,OBS,W,SC,BS,ALL)
-SaveGhistory                  # [RT] Save the history of the green function
+#SaveGhistory                  # [RT] Save the history of the green function

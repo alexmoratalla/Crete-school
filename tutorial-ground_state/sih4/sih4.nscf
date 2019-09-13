@@ -1,7 +1,7 @@
 &CONTROL
     calculation = 'nscf', 
     restart_mode='from_scratch',
-    prefix='SiH4',
+    prefix='pw',
     outdir= '.',
     pseudo_dir= '.',
     wf_collect = .true.
@@ -11,10 +11,10 @@
                    celldm(1) = 35.0,
                          nat = 5,
                         ntyp = 2,
-                     ecutwfc = 25,
+                     ecutwfc = 20,
                        nspin = 1
                        nosym = .true. ,
-                        nbnd = 40,
+                        nbnd = 20,
 			force_symmorphic=.true.
  /
  &ELECTRONS
