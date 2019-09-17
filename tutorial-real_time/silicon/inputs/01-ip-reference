@@ -23,12 +23,12 @@ Chimod= "IP"                   # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
    2 |   7 |                   # [Xd] Polarization function bands
 %
 % EnRngeXd
-  0.00000 | 6.00000 | eV      # [Xd] Energy range
+  0.00000 | 4.00000 | eV      # [Xd] Energy range
 %
 % DmRngeXd
   0.10000 |  0.10000 | eV      # [Xd] Damping range
 %
-ETStpsXd= 6001                 # [Xd] Total Energy steps
+ETStpsXd= 1000                 # [Xd] Total Energy steps
 % LongDrXd
  1.000000 | 1.000000 | 1.000000 |        # [Xd] [cc] Electric Field
 %
