@@ -16,13 +16,15 @@ negf                           # [R] Real-Time dynamics
 #OccTresh=0.1000E-4             # Occupation treshold (metallic bands)
 #DBsIOoff= ""                   # [IO] Space-separated list of DB with NO I/O. DB=(DIP,X,HF,COLLs,J,GF,CARRIERs,OBS,W,SC,BS,ALL)
 FFTGvecs= 200          RL      # [FFT] Plane-waves
-HXC_Potential= "IP"            # [SC] SC HXC Potential
+HARRLvcs= 50           RL
+VXCRLvcs= 50           RL
+HXC_Potential= "Hartree"            # [SC] SC HXC Potential
 % RTBands
    2 |   7 |                   # [RT] Bands
 %
 Integrator= "RK2 RWA"              # [RT] Integrator. Use keywords space separated  ( "EULER/EXPn/INV" "SIMPLE/RK2/RK4/HEUN" "RWA")
 RTstep=10.000000       as      # [RT] Real Time step length
-NETime= 0.100000       ps      # [RT] Simulation Time
+NETime= 0.050000       ps      # [RT] Simulation Time
 % IOtime
  0.05    | 1.00     | 0.10     |  fs    # [RT] Time between to consecutive I/O (OBSERVABLEs,CARRIERs - GF - OUTPUT)
 %
@@ -48,5 +50,4 @@ Field1_Tstart= 0.000000fs      # [RT Field1] Initial Time
 % GfnQP_Wc
  0.050     | 0.00     | 0.00     |        # [EXTQP G] W parameters  (conduction) eV| 1 |eV^-1
 %
-
-Gauge="velocity"
+#Gauge="velocity"
