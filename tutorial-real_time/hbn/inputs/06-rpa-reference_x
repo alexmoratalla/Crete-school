@@ -15,7 +15,8 @@
 optics                         # [R OPT] Optics
 chi                            # [R CHI] Dyson equation for Chi.
 FFTGvecs=  200         RL      # [FFT] Plane-waves
-Chimod= "IP"                   # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+Chimod= "HARTREE"              # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+NGsBlkXd= 50           RL      # [Xd] Response block size
 % QpntsRXd
    1 |   1 |                   # [Xd] Transferred momenta
 %
@@ -28,7 +29,7 @@ Chimod= "IP"                   # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
 % DmRngeXd
   0.10000 |  0.10000 | eV      # [Xd] Damping range
 %
-ETStpsXd= 1000                 # [Xd] Total Energy steps
+ETStpsXd= 1001                 # [Xd] Total Energy steps
 % LongDrXd
- 0.000000 | 0.000000 | 1.000000 |        # [Xd] [cc] Electric Field
+ 1.000000 | 0.000000 | 0.000000 |        # [Xd] [cc] Electric Field
 %

@@ -28,7 +28,7 @@ Chimod= "IP"                   # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
 % DmRngeXd
   0.10000 |  0.10000 | eV      # [Xd] Damping range
 %
-ETStpsXd= 5001                 # [Xd] Total Energy steps
+ETStpsXd= 1001                 # [Xd] Total Energy steps
 % LongDrXd
  1.000000 | 0.000000 | 0.000000 |        # [Xd] [cc] Electric Field
 %
