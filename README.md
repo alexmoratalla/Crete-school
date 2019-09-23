@@ -2,6 +2,7 @@
 
 This repository contains the input files of Quantum Espresso (6.41) and Yambo (4.4) of the following tutorials:
 
+- Basics with QE
 - Ground State
 - Optical Properties
 - Real Time simulations
