@@ -18,27 +18,27 @@ To run the SiH4 yambo tutorial:
 1) enter the folder tutorials tutorial-ground_state/sih4
 2) run
 
-   pw.x < sih4.scf > sih4.scf.out
+   ``pw.x < sih4.scf > sih4.scf.out``
 3) run
 
-   pw.x < sih4.nscf > sih4.nscf.out
+   ``pw.x < sih4.nscf > sih4.nscf.out``
 4) enter pw.save folder
 
-   cd pw.save
+   ``cd pw.save``
 5) run p2y
 
-   p2y
+   ``p2y``
    
    which generates the SAVE folder
 6) move the SAVE folder
 
-   mv SAVE ../../../tutorial-real_time/sih4
+   ``mv SAVE ../../../tutorial-real_time/sih4``
 7) enter sih4 folder
 
-   cd ../../../tutorial-real_time/sih4
+   ``cd ../../../tutorial-real_time/sih4``
 8) run yambo initialization
 
-   yambo -F inputs/00-init
+   ``yambo -F inputs/00-init``
 9) run yambo to compute IP optical properties
 
    ``yambo -F inputs/01-ip-reference -C 01-ip-reference``
