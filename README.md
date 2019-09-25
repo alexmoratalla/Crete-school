@@ -62,7 +62,7 @@ Now we are ready for the real time simulations
 
 12) run yambo_rt to perform a TD-IP simulation
 
-   ``yambo_rt -F inputs/04-ip-dynamics-delta -J delta1 -C delta1``
+   ``yambo_rt -F ../inputs/04-ip-dynamics-delta -J delta1 -C delta1``
 
    This will create a delta1 folder with results from the real time simulation.
 
