@@ -29,11 +29,27 @@ To run the SiH4 yambo tutorial:
    mv SAVE ../../../tutorial-real_time/sih4
 7) enter sih4 folder
    cd ../../../tutorial-real_time/sih4
-8) run yambo initialization
+8) run yambo initialization 
    yambo -F inputs/00-init
 9) run yambo to compute IP optical properties
    yambo -F inputs/01-ip-reference -C 01-ip-reference
    Have a look to the input file and the output with gnuplot
+
+Now we are ready for the real time simulations
+10) remove the symmetries 
+   ypp_rt -F inputs/02-break-sym_ypp
+   This will create a FixSymm folder with a new SAVE.
+   enter it.
+   cd FixSymm
+11) run initialization again
+    yambo_rt -F ../inputs/03_init 
+12) run yambo_rt to perform a TD-IP simulation
+   yambo_rt -F inputs/04-ip-dynamics-delta -J delta1 -C delta1
+   This will create a delta1 folder with results from the real time simulation.
+   You can plot the polarization / current / external field
+13) finally you can process the polarization to get the dielectric function
+    ypp_rt -F ../inputs/05-response_ypp -J delta1 -C delta1
+    The results to be plotted are again in delta1
 
 The slides of the lectures and tutorials can be downloaded from:
 
